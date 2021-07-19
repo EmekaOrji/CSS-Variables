@@ -5,9 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Variables</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="panel"></div>
-  <div class="display"></div>
+  <div class="panel col-6 ctnr">
+    <h2>Updating CSS Variables with<span class="h1">JS</span></h2>
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    </div>
+      <label for="blur">Blur:</label>
+      <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+    </div>
+      <label for="spacing">Spacing:</label>
+      <input type="color" name="base" value="orange">
+    </div>
+  </div>
+  <img class="display col-6 ctnr" src="https://images.pexels.com/photos/4194613/pexels-photo-4194613.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
 </body>
 </html>
