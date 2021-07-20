@@ -1,7 +1,8 @@
 :root {
-  --base: #ff8c00;
-  --spacing: 10px;
-  --blur: 10px;
+  --base: #BADA55;
+  --spacing: 1px;
+  --realSpace: calc((var(--spacing)) * 15);
+  --blur: 5px;
 }
 * {
   box-sizing: border-box;
@@ -33,9 +34,9 @@
   background: darkblue;
 }
 img {
-  padding: var(--spacing);
-  background: var(--base);
-  filter: blur(var(--blur));
+  padding: var(--realSpace, 15px);
+  background: var(--base, #BADA55);
+  filter: blur(var(--blur, 5px));
   object-fit: cover;
 }
 .highlight {
